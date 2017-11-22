@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vlcdemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+- 
+    <uses-feature android:name="android.hardware.screen.portrait" />
+
+    <application
+        android:name="com.nmbb.vlc.VLCApplication"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/app_icon"
+        android:label="VLCDemo"
+        android:theme="@android:style/Theme.NoTitleBar" >
+- 
+        <activity
+            android:name="com.nmbb.vlc.ui.VlcVideoActivity"
+            android:label="VLCDemo"
+            android:screenOrientation="portrait"
+            android:theme="@style/VideoTheme" >
+- 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gll.myapplication.MainActivity">
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/ll_linearLayout">
+
+    <com.example.gll.myapplication.view.CircleView
+        android:id="@+id/mCirCleView"
+        android:layout_weight="9"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp" />
+    <LinearLayout
+        android:background="@color/colorAccent"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.example.gll.myapplication.view.ColorBar
+            android:visibility="gone"
+            android:gravity="center"
+            android:id="@+id/colorBar"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <com.example.gll.myapplication.view.CustomHorizontalScrollView
+            android:visibility="gone"
+            android:gravity="center"
+            android:id="@+id/customHorizontalScrollView"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+
+            android:scrollbars="none"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="100dp"
+                    android:paddingRight="100dp" >
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="2" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="3" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="4" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="5" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="6" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="7" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="8" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="9" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="10" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="11" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="12" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="13" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="14" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="15" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="16" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="17" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.example.gll.myapplication.view.CustomHorizontalScrollView>
+        <TextView
+            android:visibility="gone"
+            android:gravity="center"
+            android:id="@+id/back"
+            android:text="返回"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:id="@+id/reset"
+            android:text="清空"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:id="@+id/withdrawing"
+            android:text="撤回"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:id="@+id/drawAnimal"
+            android:text="画动物"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/select_color"
+            android:text="颜色"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:id="@+id/thick_thin"
+            android:text="粗细"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_above="@id/rl_relativeLayout"
+        android:background="#00000000"
+        android:id="@+id/rl_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--<TextView-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="23sp"-->
+            <!--android:text="@string/app_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

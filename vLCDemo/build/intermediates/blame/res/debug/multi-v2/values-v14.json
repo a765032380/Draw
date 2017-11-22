@@ -1,0 +1,47 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/gll/Desktop/MyApplication/vLCDemo/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
+            "map": [
+                {
+                    "source": "/Users/gll/Desktop/MyApplication/vLCDemo/src/main/res/values-v14/styles.xml",
+                    "from": {
+                        "startLines": "1,4,8",
+                        "startColumns": "1,2,0",
+                        "startOffsets": "13,87,247",
+                        "endLines": "3,7,12",
+                        "endColumns": "10,10,10",
+                        "endOffsets": "81,246,477"
+                    },
+                    "to": {
+                        "startLines": "2,5,28",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,128,1554",
+                        "endLines": "4,8,32",
+                        "endColumns": "10,10,10",
+                        "endOffsets": "123,287,1784"
+                    }
+                },
+                {
+                    "source": "/Users/gll/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/b7f00f9ac6132c56dc7f49e0daeb05c2/res/values-v14/values-v14.xml",
+                    "from": {
+                        "startLines": "2,7,8,9,15",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,331,402,485,895",
+                        "endLines": "6,7,8,14,20",
+                        "endColumns": "12,70,82,12,12",
+                        "endOffsets": "326,397,480,890,1312"
+                    },
+                    "to": {
+                        "startLines": "9,14,15,16,22",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "292,568,639,722,1132",
+                        "endLines": "13,14,15,21,27",
+                        "endColumns": "12,70,82,12,12",
+                        "endOffsets": "563,634,717,1127,1549"
+                    }
+                }
+            ]
+        }
+    ]
+}

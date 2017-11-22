@@ -1,0 +1,4 @@
+#Wed Nov 22 09:29:29 CST 2017
+base.0=/Users/gll/Desktop/MyApplication/vLCDemo/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+file.0=/Users/gll/Desktop/MyApplication/vLCDemo/build/intermediates/transforms/dexMerger/debug/0/classes.dex

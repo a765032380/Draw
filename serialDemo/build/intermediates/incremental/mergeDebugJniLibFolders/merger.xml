@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/gll/Desktop/MyApplication/serialDemo/src/main/jniLibs"><file name="armeabi/libserial_port.so" path="/Users/gll/Desktop/MyApplication/serialDemo/src/main/jniLibs/armeabi/libserial_port.so"/></source></dataSet><dataSet config="debug"><source path="/Users/gll/Desktop/MyApplication/serialDemo/src/debug/jniLibs"/></dataSet></merger>

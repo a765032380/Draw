@@ -1,0 +1,47 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/gll/Desktop/MyApplication/vLCDemobf/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
+            "map": [
+                {
+                    "source": "/Users/gll/Desktop/MyApplication/vLCDemobf/src/main/res/values-v11/styles.xml",
+                    "from": {
+                        "startLines": "1,4,8",
+                        "startColumns": "1,2,0",
+                        "startOffsets": "13,87,247",
+                        "endLines": "3,7,12",
+                        "endColumns": "10,10,10",
+                        "endOffsets": "81,246,477"
+                    },
+                    "to": {
+                        "startLines": "2,5,65",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,128,3624",
+                        "endLines": "4,8,69",
+                        "endColumns": "10,10,10",
+                        "endOffsets": "123,287,3854"
+                    }
+                },
+                {
+                    "source": "/Users/gll/.gradle/caches/transforms-1/files-1.1/appcompat-v7-19.1.0.aar/96a931cb5c2fd132dfdc1c4af1f7862f/res/values-v11/values.xml",
+                    "from": {
+                        "startLines": "6,23,36,49,68,70,72,74",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "283,1126,1939,2764,3845,3966,4069,4194",
+                        "endLines": "21,34,47,64,68,70,72,74",
+                        "endColumns": "12,12,12,12,119,101,123,131",
+                        "endOffsets": "1120,1933,2758,3613,3960,4063,4188,4321"
+                    },
+                    "to": {
+                        "startLines": "9,25,37,49,70,71,72,73",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "292,1134,1946,2770,3859,3972,4067,4184",
+                        "endLines": "24,36,48,64,70,71,72,73",
+                        "endColumns": "12,12,12,12,112,94,116,124",
+                        "endOffsets": "1129,1941,2765,3619,3967,4062,4179,4304"
+                    }
+                }
+            ]
+        }
+    ]
+}
