@@ -1,6 +1,12 @@
 package com.example.gll.myapplication;
 
+import android.Manifest;
+import android.content.Intent;
 import android.graphics.Color;
+import android.media.MediaScannerConnection;
+import android.net.Uri;
+import android.os.Environment;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -23,7 +29,7 @@ import java.util.Random;
 public class MainActivity extends  AppCompatActivity implements View.OnClickListener
 
 {
-    private TextView reset,back,select_color,withdrawing,thick_thin,drawAnimal;
+    private TextView reset,back,select_color,withdrawing,thick_thin,drawAnimal,save;
     private CircleView mCirCleView;
     private ColorBar colorBar;
     private CustomHorizontalScrollView customHorizontalScrollView;
@@ -75,7 +81,8 @@ public class MainActivity extends  AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_main);
         initUI();
 
-
+        ActivityCompat.requestPermissions(this,
+                new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 0);
     }
 
     private void initUI() {
@@ -98,6 +105,8 @@ public class MainActivity extends  AppCompatActivity implements View.OnClickList
         back.setOnClickListener(this);
         thick_thin=findViewById(R.id.thick_thin);
         thick_thin.setOnClickListener(this);
+        save=findViewById(R.id.save);
+        save.setOnClickListener(this);
 
         drawAnimal=findViewById(R.id.drawAnimal);
         drawAnimal.setOnClickListener(this);
@@ -170,7 +179,11 @@ public class MainActivity extends  AppCompatActivity implements View.OnClickList
                 showColorBar();
                 showToase("你选择了画图");
                 mCirCleView.setDrawAnimal(false);
+                if (isDrawAnimal){
+                    group.removeAllViews();
+                }
                 isDrawAnimal=false;
+
                 break;
             //撤回
             case R.id.withdrawing:
@@ -184,6 +197,9 @@ public class MainActivity extends  AppCompatActivity implements View.OnClickList
                 mCirCleView.pathReset();
                 showCustomHorizontalScrollView();
                 mCirCleView.setDrawAnimal(false);
+                if (isDrawAnimal){
+                    group.removeAllViews();
+                }
                 isDrawAnimal=false;
                 showToase("你选择了画图");
                 break;
@@ -193,6 +209,15 @@ public class MainActivity extends  AppCompatActivity implements View.OnClickList
                 mCirCleView.setDrawAnimal(true);
                 isDrawAnimal=true;
                 showToase("你选择了画动物");
+                break;
+                //保存
+            case R.id.save:
+//                mCirCleView.saveToSDCard();
+//                Intent intent = new Intent(Intent.ACTION_MEDIA_MOUNTED);
+//                intent.setData(Uri.fromFile(Environment.getExternalStorageDirectory()));
+//                sendBroadcast(intent);
+//                String[] paths = new String[]{Environment.getExternalStorageDirectory().toString()};
+//                MediaScannerConnection.scanFile(this, paths, null, null);
                 break;
         }
     }

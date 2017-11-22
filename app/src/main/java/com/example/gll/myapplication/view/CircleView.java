@@ -1,6 +1,7 @@
 package com.example.gll.myapplication.view;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -11,7 +12,9 @@ import android.graphics.Path;
 import android.graphics.Rect;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Build;
+import android.os.Environment;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
@@ -22,7 +25,11 @@ import android.view.View;
 import com.example.gll.myapplication.R;
 import com.example.gll.myapplication.listener.OnDrawViewListener;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -54,6 +61,11 @@ public class CircleView extends View {
     private List<Paint> mListPaint=new ArrayList<>();
     private boolean withDrawing=false;
     private boolean isDrawAnimal=false;
+
+    private Bitmap mBitmap;
+    private Canvas mCanvas;
+
+
     private OnDrawViewListener onDrawViewListener;
     public void setOnDrawViewListener(OnDrawViewListener onDrawViewListener){
         this.onDrawViewListener=onDrawViewListener;
@@ -113,6 +125,7 @@ public class CircleView extends View {
         m.setStrokeMiter(paintStrokeMiter);
 
         mBitmapPaint=new Paint();
+//        initCanvas();
 
 
     }
@@ -204,6 +217,30 @@ public class CircleView extends View {
                 mListPaint.remove(mListPaint.size()-1);
         }
         invalidate();
+    }
+    //保存到sd卡
+    public void saveToSDCard() {
+        //获得系统当前时间，并以该时间作为文件名
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMddHHmmss");
+        Date curDate = new Date(System.currentTimeMillis());//获取当前时间
+        String str = formatter.format(curDate) + "paint.png";
+        File file = new File("sdcard/" + str);
+        FileOutputStream fos = null;
+        try {
+            fos = new FileOutputStream(file);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        mBitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
+
+        Log.e("TAG", "图片已保存");
+    }
+    public void initCanvas() {
+        //画布大小
+        mBitmap = Bitmap.createBitmap(1080/2, 1920/2, Bitmap.Config.ARGB_8888);
+        mBitmap.eraseColor(Color.argb(0, 0, 0, 0));
+        mCanvas = new Canvas(mBitmap);  //所有mCanvas画的东西都被保存在了mBitmap中
+        mCanvas.drawColor(Color.TRANSPARENT);
     }
 
 }
