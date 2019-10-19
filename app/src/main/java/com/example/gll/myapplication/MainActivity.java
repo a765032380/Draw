@@ -258,5 +258,27 @@ public class MainActivity extends  AppCompatActivity implements View.OnClickList
     private void showToase(String message){
         Toast.makeText(MainActivity.this,message,Toast.LENGTH_LONG).show();
     }
+    /***
+     * 虾尾    一斤
+     * 辣椒王  五六个
+     * 花椒    十几个
+     * 麻椒    十几个
+     * 香叶    三片
+     * 小茴香  二十个左右
+     * 大葱    半根（切段）
+     * 姜      两片（切两刀就行）
+     * 鸡精    少许
+     * 盐      少许
+     * 糖      少许
+     * 啤酒    半瓶左右
+     * 虾尾都是带冰的，可以用凉水泡着，一会儿就化了。
+     * 锅内烧油，油烧7成热后放葱，姜，花椒，麻椒，辣椒，香叶，小茴香（注意不要辣椒烧糊了）
+     * 翻炒出香味以后，放虾尾，翻炒一分钟左右，放盐，糖，鸡精，（盐和鸡精根据自己的口味放就行，糖比盐稍微多一些就行）
+     * 然后翻搅一下。
+     * 然后放啤酒，啤酒没过虾尾就可以。
+     * 然后大火收汁。留一些汁。用剩这的汁泡着点儿虾尾。
+     * 等虾尾凉了以后，就可以吃了，凉的比热的要好吃。
+     *
+     */
 
 }

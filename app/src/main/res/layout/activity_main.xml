@@ -5,16 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.gll.myapplication.MainActivity">
+    <com.example.gll.myapplication.view.MyRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <LinearLayout
-
-
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:id="@+id/ll_linearLayout">
 
     <com.example.gll.myapplication.view.CircleView
+        android:visibility="visible"
         android:id="@+id/mCirCleView"
         android:layout_weight="9"
         android:layout_width="wrap_content"
@@ -231,4 +233,5 @@
 
     </RelativeLayout>
 
+    </com.example.gll.myapplication.view.MyRelativeLayout>
 </RelativeLayout>

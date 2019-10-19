@@ -1,2 +1,4 @@
-include ':app', ':vLCDemo'
-include ':serialDemo'
+include ':app'
+//, ':vLCDemo'
+//include ':serialDemo'
+include ':genericDrawerLayout'

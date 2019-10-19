@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <com.example.gll.myapplication.pageturn.view.CoverPageView
+        android:id="@+id/coverPageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+    <!--<com.example.gll.myapplication.view.MyRelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+    <!--</com.example.gll.myapplication.view.MyRelativeLayout>-->
+    <View
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.example.gll.myapplication.view.SlideBoardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.example.gll.myapplication.view.SlideInnerLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <com.example.gll.myapplication.view.SlideHandView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="flag" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Button" />
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Button" />
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Button" />
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Button" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </com.example.gll.myapplication.view.SlideInnerLayout>
+    </com.example.gll.myapplication.view.SlideBoardView>
+    <com.example.gll.myapplication.view.SlideBoardView
+        android:id="@+id/slideBoardView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#33CCCCCC" >
+
+        <com.example.gll.myapplication.view.SlideInnerLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#99CC00"
+            android:orientation="horizontal" >
+
+            <com.example.gll.myapplication.view.SlideHandView
+                android:id="@+id/flag"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:background="#FF8800"
+                android:gravity="center"
+                android:text="flag" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Button" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Button" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Button" />
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Button" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </com.example.gll.myapplication.view.SlideInnerLayout>
+    </com.example.gll.myapplication.view.SlideBoardView>
+</RelativeLayout>
